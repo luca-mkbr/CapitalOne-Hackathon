@@ -1,18 +1,31 @@
 import React from 'react'
-import { PieChart, Pie} from 'recharts';
+import { PieChart, Pie, Tooltip} from 'recharts';
 import './Budget.css'
 
 const Budget = () => {
   const data = [
-      {name: 'Savings', percent:20, color: '#168118'},
-      {name: 'Necessities', percent:50, color: '#168118'},
-      {name: 'Discretionary Spending', percent:30, color: '#168118'}
+      {name: 'Savings', value:20},
+      {name: 'Necessities', value:50},
+      {name: 'Discretionary Spending', value:30}
   ];
   return (
-      <PieChart width={700} height={700}>
-          <Pie data={data} dataKey="percent" outerRadius={250} fill="yellow" />
-      </PieChart>
+    <div className= "Budget">
+    <h1>Budget</h1>
+     <PieChart width={400} height ={400}>
+       <Pie
+       dataKey="value"
+       isAnimationActive={true}
+       data={data01}
+       cx={200}
+       cy={200}
+       outerRadius={80}
+       fill="#8884d8"
+       label
+       />
+       <Tooltip/>
+     </PieChart>
+     </div>
   );
-}
+};
 
 export default Budget;
