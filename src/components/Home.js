@@ -3,27 +3,23 @@ import { Link } from 'react-router-dom'
 import './Home.css'
 import './AddBudget'
 import Piechart from './Piechart'
+import { budgetData } from '../data/budgetData'
 
 const Home = () => {
-    const data = [
-        {name: 'Savings', percent:20 },
-        {name: 'Necessities', percent:50},
-        {name: 'Discretionary Spending', percent:30}
-    ];
     return (
         <div className="main-container">
             <div className="flex-container">
                 <div className="flex-child">
-                    <CategoryBox label="Savings" amount="$69">
+                    <CategoryBox label="Savings" amount={budgetData[0].necessitiesAmount}>
 
                     </CategoryBox>
-                    <CategoryBox label="Necessities" amount="$69">
+                    <CategoryBox label="Necessities" amount={budgetData[0].savingsAmount}>
                         
                     </CategoryBox>
-                    <CategoryBox label="Discretionary" amount="$69">
+                    <CategoryBox label="Discretionary" amount={budgetData[0].discretionaryAmount}>
 
                     </CategoryBox>
-                    <Link to="/Budget"><div className = "showmore">Show More</div></Link>
+                    <Link to="/budget"><div className = "showmore">Show More</div></Link>
                 </div>
                 <div className="flex-child">
                 <Piechart/>
@@ -37,7 +33,7 @@ function CategoryBox(props) {
     return (
         <div className="categorybox">
             <h2>{props.label}</h2>
-            {props.amount}
+            ${props.amount}
         </div>
     );
 }
