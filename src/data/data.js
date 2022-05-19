@@ -5,7 +5,7 @@ export const data = [
         type: "$25 Gift Card"
     },
     {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/WegmansLogo.svg/2560px-WegmansLogo.svg.png",
+        img: "https://pngimage.net/wp-content/uploads/2018/06/wegmans-logo-png-6.png",
         name: "Wegmans",
         type: "30% off Self-Care Items"
     },
