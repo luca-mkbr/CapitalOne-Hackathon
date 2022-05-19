@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { PieChart, Pie} from 'recharts';
 import './Home.css'
 import './AddBudget.js'
+import Piechart from './Piechart'
 
 const Home = () => {
     const data = [
@@ -25,9 +25,13 @@ const Home = () => {
                 </div>
                 
                 <div className="flex-child">
+<<<<<<< HEAD
                     <PieChart width={700} height={700}>
                         <Pie data={data} dataKey="percent" outerRadius={250} fill="yellow" />
                     </PieChart>
+=======
+                <Piechart/>
+>>>>>>> beb4c5cb5e6cd692878eaef6431e0f7113a45866
                 </div>
             </div>
         </div>
