@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Budget from './components/Budget';
 import Rewards from './components/Rewards';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/"></Route>
+          <Route path="/" element={<Home/>}></Route>
           <Route path="/budget" element={<Budget/>}></Route>
           <Route path="/rewards" element={<Rewards/>}></Route>
           </Routes>
