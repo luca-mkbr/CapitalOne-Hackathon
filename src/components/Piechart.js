@@ -10,8 +10,6 @@ const Piechart = () => {
   ];
   return (
     <div className="Piechart">
-      <div className="flex-container">
-        <div className="flex-child">
           <PieChart width={550}
             height={550} >
             <Pie
@@ -31,10 +29,6 @@ const Piechart = () => {
             <Tooltip />
           </PieChart>
         </div>
-        <div className="flex-child">
-        </div>
-      </div>
-    </div>
   );
 };
 
