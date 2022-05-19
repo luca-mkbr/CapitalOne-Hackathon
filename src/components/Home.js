@@ -24,7 +24,7 @@ const Home = () => {
                         
                     </button>
                     <div className="showmore">
-                    <Link to="/AddBudget">Show More</Link>
+                    <Link to="/Budget">Show More</Link>
                     </div>
                 </div>
                 <div className="flex-child">
