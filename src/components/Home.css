@@ -28,22 +28,15 @@
     margin-bottom: 50px;
     font-size: 25px;
 }
-.link{
-    background-color: #284124;
-    height: 10%;
-    text-align: center;
-}
+
 .showmore {
-    padding-left: 10px;
     background-color: #284124;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: -75px;
 }
-h1{
-    color: #ffffff;
-    font-size: 40px;
-}
+
 h2 {
     font-size: 30px;
     font-weight: normal;

@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import { Link } from 'react-router-dom'
 
 const Login = () => {
-const [errorMessages, setErrorMessages] = useState({});
+  const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const database = [
@@ -78,11 +78,11 @@ const [errorMessages, setErrorMessages] = useState({});
 
   return (
     <div className="app">
-    <div className="login-form">
-      <div className="title">Sign In</div>
-      {isSubmitted ? <Navigate to="/home"/> : renderForm}
+      <div className="login-form">
+        <div className="title">Sign In</div>
+        {isSubmitted ? <Navigate to="/home"/> : renderForm}
+      </div>
     </div>
-  </div>
   );
 }
 
