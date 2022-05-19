@@ -13,15 +13,15 @@ const Home = () => {
         <div className="main-container">
             <div className="flex-container">
                 <div className="flex-child">
-                    <Button label="Savings" amount="$69">
+                    <button label="Savings" amount="$69">
 
-                    </Button>
-                    <Button label="Necessities" amount="$69">
+                    </button>
+                    <button label="Necessities" amount="$69">
                         
-                    </Button>
-                    <Button label="Discretionary" amount="$69">
+                    </button>
+                    <button label="Discretionary" amount="$69">
                         
-                    </Button>
+                    </button>
                     <div className="showmore">
                     <Link to="/budget">Show More</Link>
                     </div>
