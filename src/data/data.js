@@ -23,6 +23,12 @@ export const data = [
         img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/REI_logo.svg/640px-REI_logo.svg.png",
         name: "REI",
         type: "$100 On Camping Gear"
+    },
+    {
+        img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/REI_logo.svg/640px-REI_logo.svg.png",
+        name: "REI",
+        type: "$100 On Camping Gear"
     }
+
 
 ]
