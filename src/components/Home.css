@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #168118;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-container {
+    flex-direction: row;
+}
+
+.left-container {
+    font-size: 45px;
+    background-color: #168118;
+    height: 100px;
+}
+
+.right-container {
+    font-size: 45px;
+    background-color: #49794a;
+    height: 100px;
+}
+
+a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 35px;
+}
