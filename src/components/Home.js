@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { PieChart, Pie} from 'recharts';
 import './Home.css'
+import './addBudget.js'
 
 const Home = () => {
     const data = [
@@ -13,17 +14,17 @@ const Home = () => {
         <div className="main-container">
             <div className="flex-container">
                 <div className="flex-child">
-                    <CategoryBox label="Savings" amount="$69">
+                    <button label="Savings" amount="$69">
 
-                    </CategoryBox>
-                    <CategoryBox label="Necessities" amount="$69">
+                    </button>
+                    <button label="Necessities" amount="$69">
                         
-                    </CategoryBox>
-                    <CategoryBox label="Discretionary" amount="$69">
+                    </button>
+                    <button label="Discretionary" amount="$69">
                         
-                    </CategoryBox>
+                    </button>
                     <div className="showmore">
-                    <Link to="/budget">Show More</Link>
+                    <Link to="/addBudget">Show More</Link>
                     </div>
                 </div>
                 <div className="flex-child">
