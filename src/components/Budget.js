@@ -9,7 +9,6 @@ const Budget = () => {
                 <div className="flex-child">
                     <Piechart />
                 </div>
-                <div>Budget</div>
                 <div className='flex-child'>
                     <div>Update Budget</div>
 

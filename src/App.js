@@ -10,10 +10,16 @@ import ReactDOM from "react-dom";
 
 
 function App() {
+  const ref = window.location.href;
+  const [onLogin, setOnLogin] = useState(true)
+  if (window.location.href != "http://localhost:3000/") {
+    setOnLogin(!onLogin);
+  }
+  console.log(window.location.href)
   return (
     <div className="App">
       <Router>
-        <Header/>
+        {onLogin ? (<></>) : (<Header/>)}
         <Routes>
           <Route path="/" element={<Login/>}></Route>
           <Route path="/home" element={<Home/>}></Route>
