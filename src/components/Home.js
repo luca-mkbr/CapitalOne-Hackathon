@@ -10,13 +10,13 @@ const Home = () => {
         <div className="main-container">
             <div className="flex-container">
                 <div className="flex-child">
-                    <CategoryBox label="Savings" amount={budgetData[0].necessitiesAmount}>
+                    <CategoryBox label="Savings" amount={budgetData.necessitiesAmount}>
 
                     </CategoryBox>
-                    <CategoryBox label="Necessities" amount={budgetData[0].savingsAmount}>
+                    <CategoryBox label="Necessities" amount={budgetData.savingsAmount}>
                         
                     </CategoryBox>
-                    <CategoryBox label="Discretionary" amount={budgetData[0].discretionaryAmount}>
+                    <CategoryBox label="Discretionary" amount={budgetData.discretionaryAmount}>
 
                     </CategoryBox>
                     <Link to="/budget"><div className = "showmore">Show More</div></Link>

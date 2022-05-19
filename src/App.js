@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css';
 import Header from './components/Header';
 import Budget from './components/Budget';
+import AddBudget from './components/AddBudget';
 import Rewards from './components/Rewards';
 import Home from './components/Home';
 import React, { useState } from "react";
