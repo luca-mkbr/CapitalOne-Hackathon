@@ -4,25 +4,30 @@ import './Home.css'
 import './AddBudget'
 import Piechart from './Piechart'
 import { budgetData } from '../data/budgetData'
+import Header from './Header';
+
 
 const Home = () => {
     return (
-        <div className="main-container">
-            <div className="flex-container">
-                <div className="flex-child">
-                    <CategoryBox label="Savings" amount={budgetData.necessitiesAmount}>
+        <div>
+            <Header/>
+            <div className="main-container">
+                <div className="flex-container">
+                    <div className="flex-child">
+                        <CategoryBox label="Savings" amount={budgetData.necessitiesAmount}>
 
-                    </CategoryBox>
-                    <CategoryBox label="Necessities" amount={budgetData.savingsAmount}>
-                        
-                    </CategoryBox>
-                    <CategoryBox label="Discretionary" amount={budgetData.discretionaryAmount}>
+                        </CategoryBox>
+                        <CategoryBox label="Necessities" amount={budgetData.savingsAmount}>
+                            
+                        </CategoryBox>
+                        <CategoryBox label="Discretionary" amount={budgetData.discretionaryAmount}>
 
-                    </CategoryBox>
-                    <Link to="/budget"><div className = "showmore">Show More</div></Link>
-                </div>
-                <div className="flex-child">
-                <Piechart/>
+                        </CategoryBox>
+                        <Link to="/budget"><div className = "showmore">Show More</div></Link>
+                    </div>
+                    <div className="flex-child">
+                    <Piechart/>
+                    </div>
                 </div>
             </div>
         </div>

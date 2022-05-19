@@ -3,10 +3,12 @@ import './Rewards.css'
 import Reward from './Reward.js'
 import { data } from '../data/data'
 import { pastRewardsData } from '../data/pastRewardsData'
+import Header from './Header';
 
 const Rewards = () => {
     return (
         <div>
+            <Header/>
             <div className='title1'>Rewards:</div>
             <div className='rewards'>
                 {data.map((reward) => (
