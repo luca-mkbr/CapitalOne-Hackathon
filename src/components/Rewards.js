@@ -2,6 +2,7 @@ import React from 'react'
 import './Rewards.css'
 import Reward from './Reward.js'
 import {data} from '../data/data'
+import {pastRewardsData} from '../data/pastRewardsData'
 
 const Rewards = () => {
   return (
@@ -15,7 +16,9 @@ const Rewards = () => {
         <h2 className='subtitle'>Next Reward:</h2>
         <h1 className='title'>Past Rewards</h1>
         <div className='rewards'>
-
+            {pastRewardsData.map((reward) => (
+                <Reward name={reward.name} image={reward.img} type={reward.type}/>
+            ))}
         </div>
     </div>
   )
