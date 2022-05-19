@@ -1,20 +1,28 @@
 img {
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
 
-  }
 .reward {
   background-color: #168118;
   border: 30px solid #168118;
   border-radius: 10px;
   margin: 30px;
+  animation: fadeIn 2.5s;
 }
-  
+
 .rewardName {
   font-weight: bold;
   font-size: 20px;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
 
-  
+  100% {
+    opacity: 1;
+  }
+}
