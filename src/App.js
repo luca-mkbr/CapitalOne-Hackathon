@@ -4,6 +4,10 @@ import Header from './components/Header';
 import Budget from './components/Budget';
 import Rewards from './components/Rewards';
 import Home from './components/Home';
+import React, { useState } from "react";
+import Login from './components/Login'
+import ReactDOM from "react-dom";
+
 
 function App() {
   return (
@@ -11,7 +15,8 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
+          <Route path="/" element={<Login/>}></Route>
+          <Route path="/home" element={<Home/>}></Route>
           <Route path="/budget" element={<Budget/>}></Route>
           <Route path="/rewards" element={<Rewards/>}></Route>
           </Routes>

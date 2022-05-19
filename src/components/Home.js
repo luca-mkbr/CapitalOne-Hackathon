@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { PieChart, Pie} from 'recharts';
 import './Home.css'
-import './addBudget.js'
+import './AddBudget.js'
 
 const Home = () => {
     const data = [
@@ -24,7 +24,7 @@ const Home = () => {
                         
                     </button>
                     <div className="showmore">
-                    <Link to="/addBudget">Show More</Link>
+                    <Link to="/AddBudget">Show More</Link>
                     </div>
                 </div>
                 <div className="flex-child">

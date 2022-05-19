@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import { data } from '../data/data'
-import './addBudget.css'
+import './AddBudget.css'
 
-const addBudget = () => {
+const AddBudget = () => {
     let navigate =useNavigate();
 
     const [savings, setSavings] = useState('')
@@ -41,4 +41,4 @@ const addBudget = () => {
  )
 }
 
-export default addBudget
+export default AddBudget
