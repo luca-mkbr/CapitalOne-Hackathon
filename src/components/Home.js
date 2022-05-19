@@ -14,23 +14,20 @@ const Home = () => {
         <div className="main-container">
             <div className="flex-container">
                 <div className="flex-child">
-                    <button label="Savings" amount="$69">
-
-                    </button>
-                    <button label="Necessities" amount="$69">
-                        
-                    </button>
-                    <button label="Discretionary" amount="$69">
-                        
-                    </button>
-                    <div className="showmore">
-                    <Link to="/Budget">Show More</Link>
-                    </div>
+                    
+                    <div className = "essentials"><h1>Essentials</h1> </div>
+                    <div></div>
+                    <div className = "essentials"><h1>Utilities</h1> </div>
+                    <div className = "essentials"><h1>Medical</h1> </div>
+                    <div className = "essentials"><h1>Insurance</h1> </div>
+                    <div className = "link"><Link to="/Budget"><h1>Show More</h1></Link></div>
+                
                 </div>
+                
                 <div className="flex-child">
-                <PieChart width={700} height={700}>
-                    <Pie data={data} dataKey="percent" outerRadius={250} fill="yellow" />
-                </PieChart>
+                    <PieChart width={700} height={700}>
+                        <Pie data={data} dataKey="percent" outerRadius={250} fill="yellow" />
+                    </PieChart>
                 </div>
             </div>
         </div>
