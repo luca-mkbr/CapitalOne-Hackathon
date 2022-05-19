@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
 import './Login.css'
 import ReactDOM from "react-dom";
 import { Link } from 'react-router-dom'
@@ -9,13 +10,13 @@ const [errorMessages, setErrorMessages] = useState({});
 
   const database = [
     {
-      username: "miktad",
-      password: "Password!"
+      username: "capitaloneuser",
+      password: "supersecretpassword"
     },
     {
-      username: "ryan",
-      password: "Wordpass!"
-    },
+      username: "c1",
+      password: "pass"
+    }
   ];
 
   const errors = {
@@ -79,7 +80,7 @@ const [errorMessages, setErrorMessages] = useState({});
     <div className="app">
     <div className="login-form">
       <div className="title">Sign In</div>
-      {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+      {isSubmitted ? <Navigate to="/Home"/> : renderForm}
     </div>
   </div>
   );
