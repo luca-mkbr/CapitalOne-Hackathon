@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css';
 import Header from './components/Header';
 import Budget from './components/Budget';
+import AddBudget from './components/AddBudget';
 import Rewards from './components/Rewards';
 import Home from './components/Home';
 import React, { useState } from "react";
@@ -10,10 +11,16 @@ import ReactDOM from "react-dom";
 
 
 function App() {
+  const ref = window.location.href;
+  const [onLogin, setOnLogin] = useState(true)
+  if (window.location.href != "http://localhost:3000/") {
+    setOnLogin(!onLogin);
+  }
+  console.log(window.location.href)
   return (
     <div className="App">
       <Router>
-        <Header/>
+        {onLogin ? (<></>) : (<Header/>)}
         <Routes>
           <Route path="/" element={<Login/>}></Route>
           <Route path="/home" element={<Home/>}></Route>
