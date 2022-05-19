@@ -7,8 +7,9 @@ const Rewards = () => {
     <div>
         <h1 className='title'>Rewards</h1>
         <div className='rewards'>
-
+            
         </div>
+        <h2 className='subtitle'>Next Reward:</h2>
         <h1 className='title'>Past Rewards</h1>
         <div className='rewards'>
 

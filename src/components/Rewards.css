@@ -1,3 +1,12 @@
 .title {
-    text-align: left
+    text-align: left;
+}
+
+.subtitle {
+    text-align: left;
+}
+
+.rewards {
+    display: flex;
+    justify-content: flex-start;
 }
