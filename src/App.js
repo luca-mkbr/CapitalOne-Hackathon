@@ -5,18 +5,21 @@ import Budget from './components/Budget';
 import AddBudget from './components/AddBudget';
 import Rewards from './components/Rewards';
 import Home from './components/Home';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Login from './components/Login'
 import ReactDOM from "react-dom";
 
 
 function App() {
-  const ref = window.location.href;
-  const [onLogin, setOnLogin] = useState(true)
-  if (window.location.href != "http://localhost:3000/") {
-    setOnLogin(!onLogin);
-  }
-  console.log(window.location.href)
+  const onLogin = false;
+  // const ref = window.location.href;
+  // const [onLogin, setOnLogin] = useState(true);
+  // useEffect(() => {
+  //   if (window.location.href != "http://localhost:3000/") {
+  //     setOnLogin(!onLogin);
+  //   }
+  //   console.log(window.location.href)
+  // }, []);
   return (
     <div className="App">
       <Router>
