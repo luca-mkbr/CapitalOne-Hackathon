@@ -32,8 +32,7 @@ const Home = () => {
 function CategoryBox(props) {
     return (
         <div className="categorybox">
-            <h2>{props.label}</h2>
-            ${props.amount}
+            <h2>{props.label}: ${props.amount}</h2>
         </div>
     );
 }

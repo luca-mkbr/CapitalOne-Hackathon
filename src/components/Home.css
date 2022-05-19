@@ -20,7 +20,8 @@
 }
 
 .categorybox {
-    background-color: #168118;
+    background-color: #6ba46c;
+    border: 3px solid #475445;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
@@ -30,7 +31,8 @@
 }
 
 .showmore {
-    background-color: #284124;
+    background-color: #475445;
+    border: 3px solid #000000;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
