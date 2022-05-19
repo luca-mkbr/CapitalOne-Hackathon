@@ -7,7 +7,7 @@ import Header from './Header';
 
 const Rewards = () => {
     return (
-        <div>
+        <div className="og">
             <Header/>
             <div className='title1'>Rewards:</div>
             <div className='rewards'>

@@ -9,7 +9,7 @@ import Header from './Header';
 
 const Home = () => {
     return (
-        <div>
+        <div className="og">
             <Header/>
             <div className="main-container">
                 <div className="flex-container">
