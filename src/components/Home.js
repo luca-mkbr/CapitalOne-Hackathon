@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
-import './AddBudget.js'
+import './AddBudget'
 import Piechart from './Piechart'
 
 const Home = () => {
@@ -15,11 +15,15 @@ const Home = () => {
             <div className="flex-container">
                 <div className="flex-child">
                     
-                    <div className = "essentials"><h1>Essentials</h1> </div>
-                    <div></div>
-                    <div className = "essentials"><h1>Utilities</h1> </div>
-                    <div className = "essentials"><h1>Medical</h1> </div>
-                    <div className = "essentials"><h1>Insurance</h1> </div>
+                    <CategoryBox label="Savings" amount="$69">
+
+                    </CategoryBox>
+                    <CategoryBox label="Necessities" amount="$69">
+                        
+                    </CategoryBox>
+                    <CategoryBox label="Discretionary" amount="$69">
+
+                    </CategoryBox>
                     <div className = "link"><Link to="/Budget"><h1>Show More</h1></Link></div>
                 
                 </div>
