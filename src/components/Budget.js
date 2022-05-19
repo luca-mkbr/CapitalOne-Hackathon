@@ -1,5 +1,6 @@
 import React from 'react'
 import { PieChart, Pie} from 'recharts';
+import './Budget.css'
 
 const Budget = () => {
   const data = [

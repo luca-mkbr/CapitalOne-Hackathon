@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { PieChart, Pie} from 'recharts';
 import './Home.css'
 
 const Home = () => {
@@ -15,22 +17,20 @@ const Home = () => {
                 <Button label="Discretionary">
                     
                 </Button>
-                <div className="showmore">
+                <Button className="addBudget">
                     <h2>Show More</h2>
-                </div>
-            </div>
-            <div className="flex-child">
-                hi1
+                </Button>
             </div>
         </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 function CategoryBox(props) {
     return (
         <div className="categorybox">
             <h2>{props.label}</h2>
+            {props.amount}
         </div>
     );
 }
