@@ -3,9 +3,9 @@ import { PieChart, Pie} from 'recharts';
 
 const Budget = () => {
   const data = [
-      {name: 'Savings', percent:20 },
-      {name: 'Necessities', percent:50},
-      {name: 'Discretionary Spending', percent:30}
+      {name: 'Savings', percent:20, color: '#168118'},
+      {name: 'Necessities', percent:50, color: '#168118'},
+      {name: 'Discretionary Spending', percent:30, color: '#168118'}
   ];
   return (
       <PieChart width={700} height={700}>

@@ -6,15 +6,15 @@ const Home = () => {
     <div className="main-container">
         <div className="flex-container">
             <div className="flex-child">
-                <CategoryBox label="Savings">
+                <Button label="Savings">
 
-                </CategoryBox>
-                <CategoryBox label="Necessities">
+                </Button>
+                <Button label="Necessities">
                     
-                </CategoryBox>
-                <CategoryBox label="Discretionary">
+                </Button>
+                <Button label="Discretionary">
                     
-                </CategoryBox>
+                </Button>
                 <div className="showmore">
                     <h2>Show More</h2>
                 </div>
