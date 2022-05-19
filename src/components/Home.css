@@ -17,25 +17,27 @@
 }
 
 .main-container {
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: pink;
 }
 
 .flex-container {
-    flex-direction: row;
+    display: flex;
 }
 
-.left-container {
+.flex-child:first-child {
     font-size: 45px;
     background-color: #168118;
     height: 100px;
+    width: 50%;
 }
 
-.right-container {
+.flex-child {
     font-size: 45px;
     background-color: #49794a;
     height: 100px;
+    width: 50%;
 }
 
 a {

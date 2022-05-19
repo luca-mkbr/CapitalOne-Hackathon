@@ -5,11 +5,11 @@ const Home = () => {
   return (
     <div className="main-container">
         <div className="flex-container">
-            <div className="left-container">
-                hello
-            </div>
-            <div className="right-container">
+            <div className="flex-child">
                 hi
+            </div>
+            <div className="flex-child">
+                hi1
             </div>
         </div>
     </div>
