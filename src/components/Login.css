@@ -1,12 +1,11 @@
 .app {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
     height: 100vh;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     background-color: #f8f9fd;
   }
   
@@ -20,14 +19,14 @@
     margin-top: 10px;
     cursor: pointer;
     font-size: 15px;
-    background: #01d28e;
-    border: 1px solid #01d28e;
+    background: #6ba46c;
+    border: 1px solid #6ba46c;
     color: #fff;
     padding: 10px 20px;
   }
   
   input[type="submit"]:hover {
-    background: #6cf0c2;
+    background: #6ba46c;
   }
   
   .button-container {
