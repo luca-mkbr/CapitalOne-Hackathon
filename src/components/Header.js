@@ -5,7 +5,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div className="header">
-            <Link to="/"><h1 className="appname">HighSummit Bank</h1></Link>
+            <Link to="/"><h1 className="appname">Capital One Budget Tracker</h1></Link>
                 <div className="links">
                     <Link to="/home">Home</Link>
                     <Link to="/budget">Budget</Link>
