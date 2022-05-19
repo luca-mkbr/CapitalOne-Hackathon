@@ -23,7 +23,7 @@ const Home = () => {
                         
                     </button>
                     <div className="showmore">
-                    <Link to="/budget">Show More</Link>
+                    <Link to="/addBudget">Show More</Link>
                     </div>
                 </div>
                 <div className="flex-child">
