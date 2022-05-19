@@ -9,4 +9,5 @@
 .rewards {
     display: flex;
     justify-content: flex-start;
+    overflow: auto;
 }
