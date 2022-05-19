@@ -10,6 +10,7 @@ const Piechart = () => {
   ];
   return (
     <div className="Piechart">
+      <div className = "piIndent"> <h1></h1></div>
           <PieChart width={550}
             height={550} >
             <Pie
