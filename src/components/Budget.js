@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react'
 import { PieChart, Pie} from 'recharts';
 
@@ -16,16 +16,4 @@ const Budget = () => {
 }
 
 export default Budget;
-=======
-import React from 'react';
 
-const Budget = () => {
-  return (
-    <div>
-        
-    </div>
-  )
-}
-
-export default Budget
->>>>>>> 844adcbda969c32c72f2a81ecd0f60a03bfa702b
