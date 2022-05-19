@@ -26,7 +26,7 @@ const Home = () => {
                     <Link to="/Budget"><div className = "showmore">Show More</div></Link>
                 </div>
                 <div className="flex-child">
-
+                <Piechart/>
                 </div>
             </div>
         </div>
