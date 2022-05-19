@@ -80,7 +80,7 @@ const [errorMessages, setErrorMessages] = useState({});
     <div className="app">
     <div className="login-form">
       <div className="title">Sign In</div>
-      {isSubmitted ? <Navigate to="/Home"/> : renderForm}
+      {isSubmitted ? <Navigate to="/home"/> : renderForm}
     </div>
   </div>
   );
