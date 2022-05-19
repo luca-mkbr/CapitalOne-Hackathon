@@ -15,7 +15,7 @@ const Budget = () => {
        <Pie
        dataKey="value"
        isAnimationActive={true}
-       data={data01}
+       data={data}
        cx={200}
        cy={200}
        outerRadius={80}
