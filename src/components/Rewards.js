@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState} from 'react'
 import './Rewards.css'
 import Reward from './Reward.js'
 import {data} from '../data/data'
