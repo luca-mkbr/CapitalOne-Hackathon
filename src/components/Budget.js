@@ -14,7 +14,6 @@ const Budget = () => {
                 <div className='flex-child'>
                     <div>Update Budget</div>
                     <AddBudget />
-
                 </div>
             </div>
         </div>
