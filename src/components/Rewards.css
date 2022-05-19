@@ -1,12 +1,23 @@
-.title {
+.title1 {
     text-align: left;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    margin-left: 50px;
+    margin-top: 40px;
 }
 
-.subtitle {
+.title2 {
     text-align: left;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 
 .rewards {
+    margin-left: 40px;
     display: flex;
     justify-content: flex-start;
     overflow: auto;

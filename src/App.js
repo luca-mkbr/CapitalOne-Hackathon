@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+        <Header/>
         <Routes>
           <Route path="/" element={<Login/>}></Route>
           <Route path="/home" element={<Home/>}></Route>

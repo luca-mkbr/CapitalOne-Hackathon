@@ -1,18 +1,21 @@
 img {
-  width: 250px;
-  height: 250px;
+  object-fit: contain;
+  max-height: 250px;
+  max-width: 250px;
   border-radius: 10px;
 }
 
 .reward {
-  background-color: #168118;
-  border: 30px solid #168118;
-  border-radius: 10px;
-  margin: 30px;
-  animation: fadeIn 2.5s;
+  background-color: #b3e9b1;
+  border: 3px solid #5edf74;
+  border-radius: 50px;
+  margin: 10px;
+  animation: fadeIn 2.2s;
+  padding: 20px;
 }
 
 .rewardName {
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
