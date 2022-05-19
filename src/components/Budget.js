@@ -1,6 +1,7 @@
 import React from 'react'
 import './Budget.css'
 import Piechart from './Piechart'
+import AddBudget from './AddBudget'
 
 const Budget = () => {
     return (
@@ -12,6 +13,7 @@ const Budget = () => {
                 <div>Budget</div>
                 <div className='flex-child'>
                     <div>Update Budget</div>
+                    <AddBudget />
 
                 </div>
             </div>
