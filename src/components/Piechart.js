@@ -1,7 +1,7 @@
+import { getSelectionRange } from '@testing-library/user-event/dist/utils';
 import React from 'react'
 import { PieChart, Pie, Tooltip, Cell } from 'recharts';
 import { getCookie } from "./Cookies";
-
 
 const Piechart = () => {
   const COLORS = ['#F6BD60', '#004777', '#FF6663', '#136F63'];
@@ -21,6 +21,9 @@ const Piechart = () => {
     { name: 'Loan Payments', value: loanPaymentsNew }
   ];
   console.log("piechart values:" + savingValue, necessitiesValue, discretionaryValue, loanPaymentsValue, total, savingNew, necessitiesNew, discretionaryNew, loanPaymentsNew, data)
+  if (savingNew>0.2){ 
+    alert("You have got the right for rewards!")
+  }
   return (
     <div className="Piechart">
       <div className="piIndent"> <h1></h1></div>
@@ -45,5 +48,6 @@ const Piechart = () => {
     </div>
   );
 };
+
 
 export default Piechart;

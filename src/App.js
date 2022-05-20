@@ -6,6 +6,7 @@ import Home from './components/Home';
 import React, { useEffect } from "react";
 import Login from './components/Login'
 import { setCookie, getCookie } from "./components/Cookies";
+import PickReward from './components/PickReward';
 
 function App() {
   useEffect(() => {
@@ -29,11 +30,12 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Login />}></Route>
-          <Route path="/home" element={<Home />}></Route>
-          <Route path="/budget" element={<Budget />}></Route>
-          <Route path="/rewards" element={<Rewards />}></Route>
-        </Routes>
+          <Route path="/" element={<Login/>}></Route>
+          <Route path="/home" element={<Home/>}></Route>
+          <Route path="/budget" element={<Budget/>}></Route>
+          <Route path="/rewards" element={<Rewards/>}></Route>
+          <Route path="/reward" element={<PickReward/>}></Route>
+          </Routes>
       </Router>
     </div>
   );

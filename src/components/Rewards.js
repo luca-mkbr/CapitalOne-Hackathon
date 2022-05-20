@@ -6,6 +6,7 @@ import { pastRewardsData } from '../data/pastRewardsData';
 import Header from './Header';
 import { useNavigate } from 'react-router-dom';
 import { getCookie } from './Cookies';
+import PickReward from './PickReward'
 
 const Rewards = () => {
     let navigate = useNavigate();
@@ -24,8 +25,10 @@ const Rewards = () => {
                         <Reward name={reward.name} image={reward.img} type={reward.type} />
                     ))}
                 </div>
-                <div className='title2'>Next Reward: You are 50 / 200 points towards your next reward!</div>
-                <div className='title1'>PAST REWARDS:</div>
+
+                <PickReward />
+            
+                <div className='title1'>Past Rewards</div>
                 <div className='rewards'>
                     {pastRewardsData.map((reward) => (
                         <Reward name={reward.name} image={reward.img} type={reward.type} />

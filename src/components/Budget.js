@@ -5,6 +5,7 @@ import Piechart from './Piechart'
 import AddBudget from './AddBudget'
 import Header from './Header';
 import { getCookie } from './Cookies'
+import GetPoints from './PickReward';
 
 const Budget = () => {
     let navigate = useNavigate();
@@ -22,7 +23,6 @@ const Budget = () => {
                         <Piechart />
                     </div>
                     <div className='flex-child'>
-                        <div></div>
                         <AddBudget />
                     </div>
                 </div>
