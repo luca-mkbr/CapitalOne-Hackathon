@@ -8,19 +8,21 @@ import Header from './Header';
 const Rewards = () => {
     return (
         <div className="og">
-            <Header/>
-            <div className='title1'>Rewards:</div>
-            <div className='rewards'>
-                {data.map((reward) => (
-                    <Reward name={reward.name} image={reward.img} type={reward.type} />
-                ))}
-            </div>
-            <div className='title2'>Next Reward:</div>
-            <div className='title1'>Past Rewards: You are </div>
-            <div className='rewards'>
-                {pastRewardsData.map((reward) => (
-                    <Reward name={reward.name} image={reward.img} type={reward.type} />
-                ))}
+            <Header />
+            <div>
+                <div className='title1'>Rewards:</div>
+                <div className='rewards'>
+                    {data.map((reward) => (
+                        <Reward name={reward.name} image={reward.img} type={reward.type} />
+                    ))}
+                </div>
+                <div className='title2'>Next Reward:</div>
+                <div className='title1'>Past Rewards: You are </div>
+                <div className='rewards'>
+                    {pastRewardsData.map((reward) => (
+                        <Reward name={reward.name} image={reward.img} type={reward.type} />
+                    ))}
+                </div>
             </div>
         </div>
     )
