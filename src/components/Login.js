@@ -1,10 +1,15 @@
-import React, { useState } from "react";
-import { Navigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import './Login.css'
-import ReactDOM from "react-dom";
-import { Link } from 'react-router-dom'
+import { getCookie, setCookie } from './Cookies'
 
 const Login = () => {
+  let navigate = useNavigate();
+  useEffect(() => {
+    if (getCookie("ver") === "true") {
+      navigate("../home", ({replace:true}));
+    }
+  })
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -40,6 +45,7 @@ const Login = () => {
         setErrorMessages({ name: "pass", message: errors.pass });
       } else {
         setIsSubmitted(true);
+        setCookie("ver", "true", 0.5)
       }
     } else {
       // Username not found
@@ -73,8 +79,6 @@ const Login = () => {
       </form>
     </div>
   );
-
-
 
   return (
     <div className="app">

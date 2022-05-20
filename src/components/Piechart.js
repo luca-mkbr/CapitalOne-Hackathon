@@ -17,9 +17,10 @@ const Piechart = () => {
     { name: 'Necessities', value: necessitiesNew },
     { name: 'Discretionary Spending', value: discretionaryNew }
   ];
-  console.log(savingValue, necessitiesValue, discretionaryValue, total, savingNew, necessitiesNew, discretionaryNew, data)
+  console.log("piechart values:" + savingValue, necessitiesValue, discretionaryValue, total, savingNew, necessitiesNew, discretionaryNew, data)
   return (
     <div className="Piechart">
+      {/*eslint-disable-next-line*/}
       <div className = "piIndent"> <h1></h1></div>
           <PieChart width={550}
             height={550} >
