@@ -9,6 +9,7 @@ const AddBudget = () => {
     const [savings, setSavings] = useState('')
     const [necessities, setNecessities] = useState('')
     const [discretionary, setDiscretionary] = useState('')
+    const [loan, setLoan] = useState('')
 
     const savingsHandler = (event) => {
         setSavings(event.target.value);
@@ -19,13 +20,18 @@ const AddBudget = () => {
     const discretionaryHandler = (event) => {
         setDiscretionary(event.target.value);
     }
+    const loanHandler = (event) => {
+        setLoan(event.target.value);
+    }
     const addBudgetHandler = (event) => {
         eraseCookie("necessitiesAmount");
         eraseCookie("savingsAmount");
         eraseCookie("discretionaryAmount");
+        eraseCookie("loanPayments");
         setCookie("necessitiesAmount", savings, 999);
         setCookie("savingsAmount", necessities, 999);
         setCookie("discretionaryAmount", discretionary, 999);
+        setCookie("loanPayments", loan, 999);
         navigate("../home", ({ replace: true }));
     }
     return (
@@ -37,6 +43,8 @@ const AddBudget = () => {
             <input onChange={necessitiesHandler}></input>
             <label> Discretionary Amount</label>
             <input onChange={discretionaryHandler}></input>
+            <label> Loan Payment Amount</label>
+            <input onChange={loanHandler}></input>
             <button onClick={addBudgetHandler}> Add Budget</button>
         </div>
     )
