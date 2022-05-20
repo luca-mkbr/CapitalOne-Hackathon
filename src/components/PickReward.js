@@ -16,7 +16,7 @@ const PickReward = () => {
             <h1 className="title">Pick a Reward</h1>
                 <div></div>
                 <Reward name={randomReward.name} image={randomReward.img} type={randomReward.type}/>
-                <button className="randreward" onClick={rewardPicker}> Surprise Award </button>            
+                <button className="randreward" onClick={rewardPicker}> Surprise Reward </button>            
             </div>
             
             
