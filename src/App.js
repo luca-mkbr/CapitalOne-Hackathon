@@ -7,7 +7,7 @@ import Home from './components/Home';
 import React, { useEffect } from "react";
 import Login from './components/Login'
 import ReactDOM from "react-dom";
-import { setCookie, getCookie, eraseCookie, getParameterByName } from "./components/Cookies";
+import { setCookie, getCookie } from "./components/Cookies";
 
 function App() {
   useEffect(() => {
