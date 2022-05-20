@@ -1,11 +1,19 @@
-import React from 'react'
-import './Rewards.css'
-import Reward from './Reward.js'
-import { data } from '../data/data'
-import { pastRewardsData } from '../data/pastRewardsData'
+import React, { useEffect } from 'react';
+import './Rewards.css';
+import Reward from './Reward.js';
+import { data } from '../data/data';
+import { pastRewardsData } from '../data/pastRewardsData';
 import Header from './Header';
+import { useNavigate } from 'react-router-dom';
+import { getCookie } from './Cookies';
 
 const Rewards = () => {
+    let navigate = useNavigate();
+    useEffect(() => {
+    if (getCookie("ver") === null) {
+        navigate("../", ({replace:true}));
+    }
+    })
     return (
         <div className="og">
             <Header />

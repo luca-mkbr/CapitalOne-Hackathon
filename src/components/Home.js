@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import './Home.css'
 import './AddBudget'
 import Piechart from './Piechart'
@@ -7,6 +7,12 @@ import Header from './Header';
 import { getCookie } from "./Cookies";
 
 const Home = () => {
+    let navigate = useNavigate();
+    useEffect(() => {
+    if (getCookie("ver") === null) {
+        navigate("../", ({replace:true}));
+    }
+    })
     return (
         <div className="og">
             <Header />
