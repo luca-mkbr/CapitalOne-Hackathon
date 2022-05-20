@@ -4,6 +4,23 @@ import './Login.css'
 import { getCookie, setCookie } from './Cookies'
 
 const Login = () => {
+  useEffect(() => {
+    if (getCookie("necessitiesAmount") == null) {
+      setCookie("necessitiesAmount", "870", 999)
+    }
+
+    if (getCookie("savingsAmount") == null) {
+      setCookie("savingsAmount", "120", 999)
+    }
+
+    if (getCookie("discretionaryAmount") == null) {
+      setCookie("discretionaryAmount", "350", 999)
+    }
+
+    if (getCookie("loanPayments") == null) {
+      setCookie("loanPayments", "1500", 999)
+    }
+  }, [])
   let navigate = useNavigate();
   useEffect(() => {
     if (getCookie("ver") === "true") {
