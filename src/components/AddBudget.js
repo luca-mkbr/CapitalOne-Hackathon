@@ -26,7 +26,7 @@ const AddBudget = () => {
         setCookie("necessitiesAmount", savings, 999);
         setCookie("savingsAmount", necessities, 999);
         setCookie("discretionaryAmount", discretionary, 999);
-        // navigate("../", ({replace:true}));
+        navigate("../home", ({replace:true}));
    }
  return (
      <div className = "form">
