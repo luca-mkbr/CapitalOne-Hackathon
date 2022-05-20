@@ -16,7 +16,7 @@ const Rewards = () => {
                         <Reward name={reward.name} image={reward.img} type={reward.type} />
                     ))}
                 </div>
-                <div className='title2'>Next Reward: You are 50 / 200 points towards your next reward</div>
+                <div className='title2'>Next Reward: You are 50 / 200 points towards your next reward!</div>
                 <div className='title1'>Past Rewards</div>
                 <div className='rewards'>
                     {pastRewardsData.map((reward) => (
