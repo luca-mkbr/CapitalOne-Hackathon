@@ -30,7 +30,7 @@ const AddBudget = () => {
     }
     return (
         <div className="form">
-            <Container className="containBudget"><h1 className="savings">Add Budget</h1></Container>
+            <h1 className="savings">Add Budget</h1>
             <label> Savings Amount</label>
             <input onChange={savingsHandler}></input>
             <label> Necessities Amount</label>
