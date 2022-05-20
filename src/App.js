@@ -4,12 +4,25 @@ import Budget from './components/Budget';
 import AddBudget from './components/AddBudget';
 import Rewards from './components/Rewards';
 import Home from './components/Home';
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Login from './components/Login'
 import ReactDOM from "react-dom";
-
+import { setCookie, getCookie, eraseCookie, getParameterByName } from "./components/Cookies";
 
 function App() {
+  useEffect(() => {
+    if (getCookie("necessitiesAmount") == null) {
+      setCookie("necessitiesAmount", "21", 999)
+    }
+
+    if (getCookie("savingsAmount") == null) {
+      setCookie("savingsAmount", "69", 999)
+    }
+
+    if (getCookie("discretionaryAmount") == null) {
+      setCookie("discretionaryAmount", "420", 999)
+    }
+  }, [])
   return (
     <div className="App">
       <Router>

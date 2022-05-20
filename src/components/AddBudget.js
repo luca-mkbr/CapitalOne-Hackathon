@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
-import { data } from '../data/data'
+import { setCookie, eraseCookie } from "./Cookies";
 import './AddBudget.css'
 
 const AddBudget = () => {
-    let navigate =useNavigate();
+    let navigate = useNavigate();
 
     const [savings, setSavings] = useState('')
     const [necessities, setNecessities] = useState('')
@@ -19,13 +19,14 @@ const AddBudget = () => {
     const discretionaryHandler = (event) => {
         setDiscretionary(event.target.value);
     }
-   const addBudgetHandler = (event) => {
-       data.push({
-           savings:savings,
-           necessities:necessities,
-           discretionary:discretionary
-       })
-       navigate("../", ({replace:true}));
+    const addBudgetHandler = (event) => {
+        eraseCookie("necessitiesAmount");
+        eraseCookie("savingsAmount");
+        eraseCookie("discretionaryAmount");
+        setCookie("necessitiesAmount", savings, 999);
+        setCookie("savingsAmount", necessities, 999);
+        setCookie("discretionaryAmount", discretionary, 999);
+        // navigate("../", ({replace:true}));
    }
  return (
      <div className = "form">

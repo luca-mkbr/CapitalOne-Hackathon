@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import './Home.css'
 import './AddBudget'
 import Piechart from './Piechart'
-import { budgetData } from '../data/budgetData'
 import Header from './Header';
+import { getCookie } from "./Cookies";
 
 
 const Home = () => {
@@ -14,13 +14,13 @@ const Home = () => {
             <div className="main-container">
                 <div className="flex-container">
                     <div className="flex-child">
-                        <CategoryBox label="Savings" amount={budgetData.necessitiesAmount}>
+                        <CategoryBox label="Savings" amount={getCookie("necessitiesAmount")}>
 
                         </CategoryBox>
-                        <CategoryBox label="Necessities" amount={budgetData.savingsAmount}>
+                        <CategoryBox label="Necessities" amount={getCookie("savingsAmount")}>
                             
                         </CategoryBox>
-                        <CategoryBox label="Discretionary" amount={budgetData.discretionaryAmount}>
+                        <CategoryBox label="Discretionary" amount={getCookie("discretionaryAmount")}>
 
                         </CategoryBox>
                         <Link to="/budget"><div className = "showmore">Show More</div></Link>
