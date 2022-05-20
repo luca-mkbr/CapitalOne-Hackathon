@@ -17,6 +17,10 @@ img {
 .rewardName {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  font-size: 32px;
+}
+
+.rewardDesc {
   font-size: 20px;
 }
 

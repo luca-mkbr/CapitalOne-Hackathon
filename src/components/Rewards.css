@@ -1,8 +1,9 @@
 .title1 {
+    text-decoration: underline;
     text-align: left;
     font-size: 60px;
     font-family: 'Roboto', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     margin-left: 50px;
     margin-top: 40px;
 }

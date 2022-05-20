@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 import Budget from './components/Budget';
 import Rewards from './components/Rewards';
@@ -10,30 +10,30 @@ import { setCookie, getCookie } from "./components/Cookies";
 function App() {
   useEffect(() => {
     if (getCookie("necessitiesAmount") == null) {
-      setCookie("necessitiesAmount", "21", 999)
+      setCookie("necessitiesAmount", "870", 999)
     }
 
     if (getCookie("savingsAmount") == null) {
-      setCookie("savingsAmount", "69", 999)
+      setCookie("savingsAmount", "120", 999)
     }
 
     if (getCookie("discretionaryAmount") == null) {
-      setCookie("discretionaryAmount", "420", 999)
+      setCookie("discretionaryAmount", "350", 999)
     }
 
     if (getCookie("loanPayments") == null) {
-      setCookie("loanPayments", "420", 999)
+      setCookie("loanPayments", "1500", 999)
     }
   }, [])
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Login/>}></Route>
-          <Route path="/home" element={<Home/>}></Route>
-          <Route path="/budget" element={<Budget/>}></Route>
-          <Route path="/rewards" element={<Rewards/>}></Route>
-          </Routes>
+          <Route path="/" element={<Login />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/budget" element={<Budget />}></Route>
+          <Route path="/rewards" element={<Rewards />}></Route>
+        </Routes>
       </Router>
     </div>
   );

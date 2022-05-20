@@ -30,7 +30,7 @@ const Piechart = () => {
           dataKey="value"
           isAnimationActive={true}
           data={data}
-          cx={300}
+          cx={450}
           cy={250}
           outerRadius={200}
           fill="#8884d8"
