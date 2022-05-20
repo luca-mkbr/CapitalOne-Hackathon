@@ -29,8 +29,8 @@ const AddBudget = () => {
             eraseCookie("savingsAmount");
             eraseCookie("discretionaryAmount");
             eraseCookie("loanPayments");
-            setCookie("necessitiesAmount", savings, 999);
-            setCookie("savingsAmount", necessities, 999);
+            setCookie("savingsAmount", savings, 999);
+            setCookie("necessitiesAmount", necessities, 999);
             setCookie("discretionaryAmount", discretionary, 999);
             setCookie("loanPayments", loan, 999);
             navigate("../home", ({ replace: true }));

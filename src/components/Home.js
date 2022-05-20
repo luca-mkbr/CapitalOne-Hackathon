@@ -19,10 +19,10 @@ const Home = () => {
             <div className="main-container">
                 <div className="flex-container">
                     <div className="flex-child">
-                        <CategoryBox label="Savings" amount={getCookie("necessitiesAmount")}>
+                        <CategoryBox label="Savings" amount={getCookie("savingsAmount")}>
 
                         </CategoryBox>
-                        <CategoryBox label="Mandatory" amount={getCookie("savingsAmount")}>
+                        <CategoryBox label="Mandatory" amount={getCookie("necessitiesAmount")}>
 
                         </CategoryBox>
                         <CategoryBox label="Discretionary" amount={getCookie("discretionaryAmount")}>
