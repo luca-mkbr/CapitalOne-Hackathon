@@ -24,15 +24,21 @@ const AddBudget = () => {
         setLoan(event.target.value);
     }
     const addBudgetHandler = (event) => {
-        eraseCookie("necessitiesAmount");
-        eraseCookie("savingsAmount");
-        eraseCookie("discretionaryAmount");
-        eraseCookie("loanPayments");
-        setCookie("necessitiesAmount", savings, 999);
-        setCookie("savingsAmount", necessities, 999);
-        setCookie("discretionaryAmount", discretionary, 999);
-        setCookie("loanPayments", loan, 999);
-        navigate("../home", ({ replace: true }));
+        if (savings > 0 && necessities > 0 && discretionary > 0 && loan > 0) {
+            eraseCookie("necessitiesAmount");
+            eraseCookie("savingsAmount");
+            eraseCookie("discretionaryAmount");
+            eraseCookie("loanPayments");
+            setCookie("necessitiesAmount", savings, 999);
+            setCookie("savingsAmount", necessities, 999);
+            setCookie("discretionaryAmount", discretionary, 999);
+            setCookie("loanPayments", loan, 999);
+            navigate("../home", ({ replace: true }));
+        }
+
+        else {
+            alert("Invalid budgeting amounts! Please enter values in all boxes which are greater than 0.");
+        }
     }
     return (
         <div className="form">
