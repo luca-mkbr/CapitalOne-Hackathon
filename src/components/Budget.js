@@ -7,14 +7,14 @@ import Header from './Header';
 const Budget = () => {
     return (
         <div className="og">
-            <Header/>
+            <Header />
             <div className="main-container">
                 <div className="flex-container">
                     <div className="flex-child">
                         <Piechart />
                     </div>
                     <div className='flex-child'>
-                        <div>Update Budget</div>
+                        <div></div>
                         <AddBudget />
                     </div>
                 </div>

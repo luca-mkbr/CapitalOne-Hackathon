@@ -1,10 +1,11 @@
 .og {
     background-color: #D9D9D9;
-    position:absolute;
-    top:0px;
-    right:0px;
-    bottom:0px;
-    left:0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: auto;
+    left: 0px;
+
 }
 
 .main-container {

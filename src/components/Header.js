@@ -5,7 +5,8 @@ import './Header.css'
 const Header = () => {
     return (
         <div className="header">
-        <img src = "https://d1.awsstatic.com/Customer%20References%20Directory%20Logos/Capital-One_Logo_%401x.0aef0b700254d3f618484ff03747100753de3d64.png"></img>
+            {/*eslint-disable-next-line*/}
+            <img src = "https://d1.awsstatic.com/Customer%20References%20Directory%20Logos/Capital-One_Logo_%401x.0aef0b700254d3f618484ff03747100753de3d64.png"></img>
             <Link to="/"><h1 className="appname">Budget Tracker</h1></Link>
                 <div className="links">
                     <Link to="/home">Home</Link>

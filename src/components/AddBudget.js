@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { setCookie, eraseCookie } from "./Cookies";
 import './AddBudget.css'
@@ -9,6 +9,7 @@ const AddBudget = () => {
     const [savings, setSavings] = useState('')
     const [necessities, setNecessities] = useState('')
     const [discretionary, setDiscretionary] = useState('')
+    const [loan, setLoan] = useState('')
 
     const savingsHandler = (event) => {
         setSavings(event.target.value);
@@ -19,34 +20,40 @@ const AddBudget = () => {
     const discretionaryHandler = (event) => {
         setDiscretionary(event.target.value);
     }
+    const loanHandler = (event) => {
+        setLoan(event.target.value);
+    }
     const addBudgetHandler = (event) => {
-        if (savings > 0 && necessities > 0 && discretionary > 0) {
+        if (savings > 0 && necessities > 0 && discretionary > 0 && loan > 0) {
             eraseCookie("necessitiesAmount");
             eraseCookie("savingsAmount");
             eraseCookie("discretionaryAmount");
+            eraseCookie("loanPayments");
             setCookie("necessitiesAmount", savings, 999);
             setCookie("savingsAmount", necessities, 999);
             setCookie("discretionaryAmount", discretionary, 999);
-            navigate("../home", ({replace:true}));
+            setCookie("loanPayments", loan, 999);
+            navigate("../home", ({ replace: true }));
         }
 
         else {
-            alert("Invalid budgeting amount! Please input something greater than 0.")
+            alert("Invalid budgeting amounts! Please enter values in all boxes which are greater than 0.");
         }
-   }
- return (
-     <div className = "form">
-         <h1 className= "savings">Add Budget</h1>
-         <label> Savings Amount</label>
-         <input onChange={savingsHandler}></input>
-         <label> Necessities Amount</label>
-         <input onChange={necessitiesHandler}></input>
-         <label> Discretionary Amount</label>
-         <input onChange={discretionaryHandler}></input>
-         
-         <button onClick={addBudgetHandler}> Add Budget</button>
-     </div>
- )
+    }
+    return (
+        <div className="form">
+            <h1 className="savings">Add Budget</h1>
+            <label> Savings Amount</label>
+            <input onChange={savingsHandler}></input>
+            <label> Mandatory Amount</label>
+            <input onChange={necessitiesHandler}></input>
+            <label> Discretionary Amount</label>
+            <input onChange={discretionaryHandler}></input>
+            <label> Loan Payment Amount</label>
+            <input onChange={loanHandler}></input>
+            <button onClick={addBudgetHandler}> Add Budget</button>
+        </div>
+    )
 }
 
 export default AddBudget

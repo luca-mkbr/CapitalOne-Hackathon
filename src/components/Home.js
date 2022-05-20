@@ -6,27 +6,29 @@ import Piechart from './Piechart'
 import Header from './Header';
 import { getCookie } from "./Cookies";
 
-
 const Home = () => {
     return (
         <div className="og">
-            <Header/>
+            <Header />
             <div className="main-container">
                 <div className="flex-container">
                     <div className="flex-child">
                         <CategoryBox label="Savings" amount={getCookie("necessitiesAmount")}>
 
                         </CategoryBox>
-                        <CategoryBox label="Necessities" amount={getCookie("savingsAmount")}>
-                            
+                        <CategoryBox label="Mandatory" amount={getCookie("savingsAmount")}>
+
                         </CategoryBox>
                         <CategoryBox label="Discretionary" amount={getCookie("discretionaryAmount")}>
 
                         </CategoryBox>
-                        <Link to="/budget"><div className = "showmore">Show More</div></Link>
+                        <CategoryBox label="Loan Payments" amount={getCookie("loanPayments")}>
+
+                        </CategoryBox>
+                        <Link to="/budget"><div className="showmore">Show More</div></Link>
                     </div>
                     <div className="flex-child">
-                    <Piechart/>
+                        <Piechart />
                     </div>
                 </div>
             </div>
