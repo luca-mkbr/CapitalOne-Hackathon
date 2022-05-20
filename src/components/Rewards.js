@@ -11,7 +11,7 @@ const Rewards = () => {
         <div className="og">
             <Header />
             <div>
-                <div className='title1'>Rewards:</div>
+                <div className='title1'>REWARDS:</div>
                 <div className='rewards'>
                     {data.map((reward) => (
                         <Reward name={reward.name} image={reward.img} type={reward.type} />

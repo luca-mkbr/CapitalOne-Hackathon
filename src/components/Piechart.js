@@ -4,7 +4,7 @@ import { PieChart, Pie, Tooltip, Cell } from 'recharts';
 import { getCookie } from "./Cookies";
 
 const Piechart = () => {
-  const COLORS = ['#F6BD60', '#4DA1A9', '#FF6663', '#0FFF50'];
+  const COLORS = ['#F6BD60', '#004777', '#FF6663', '#136F63'];
   const savingValue = getCookie("necessitiesAmount");
   const necessitiesValue = getCookie("savingsAmount");
   const discretionaryValue = getCookie("discretionaryAmount");
@@ -27,14 +27,14 @@ const Piechart = () => {
   return (
     <div className="Piechart">
       <div className="piIndent"> <h1></h1></div>
-      <PieChart width={700}
-        height={750} >
+      <PieChart width={800}
+        height={800} >
         <Pie
           dataKey="value"
           isAnimationActive={true}
           data={data}
-          cx={300}
-          cy={200}
+          cx={450}
+          cy={250}
           outerRadius={200}
           fill="#8884d8"
           label
