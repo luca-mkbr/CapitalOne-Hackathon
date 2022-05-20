@@ -14,8 +14,8 @@ const Piechart = () => {
   const discretionaryNew = Math.round(discretionaryValue / total * 10000) / 100
   const data = [
     { name: 'Savings', value: savingNew },
-    { name: 'Necessities', value: necessitiesNew },
-    { name: 'Discretionary Spending', value: discretionaryNew }
+    { name: 'Mandatory', value: necessitiesNew },
+    { name: 'Discretionary', value: discretionaryNew }
   ];
   console.log(savingValue, necessitiesValue, discretionaryValue, total, savingNew, necessitiesNew, discretionaryNew, data)
   return (

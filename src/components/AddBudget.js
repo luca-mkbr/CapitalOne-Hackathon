@@ -33,7 +33,7 @@ const AddBudget = () => {
             <h1 className="savings">Add Budget</h1>
             <label> Savings Amount</label>
             <input onChange={savingsHandler}></input>
-            <label> Necessities Amount</label>
+            <label> Mandatory Amount</label>
             <input onChange={necessitiesHandler}></input>
             <label> Discretionary Amount</label>
             <input onChange={discretionaryHandler}></input>
