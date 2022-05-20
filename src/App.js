@@ -20,6 +20,10 @@ function App() {
     if (getCookie("discretionaryAmount") == null) {
       setCookie("discretionaryAmount", "420", 999)
     }
+
+    if (getCookie("loanPayments") == null) {
+      setCookie("loanPayments", "420", 999)
+    }
   }, [])
   return (
     <div className="App">
