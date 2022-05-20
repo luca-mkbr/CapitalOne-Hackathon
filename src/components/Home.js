@@ -6,7 +6,6 @@ import Piechart from './Piechart'
 import Header from './Header';
 import { getCookie } from "./Cookies";
 
-
 const Home = () => {
     return (
         <div className="og">
