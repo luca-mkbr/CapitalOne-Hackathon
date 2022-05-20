@@ -4,7 +4,7 @@ import { getCookie } from "./Cookies";
 
 
 const Piechart = () => {
-  const COLORS = ['#F6BD60', '#4DA1A9', '#FF6663', '#0FFF50'];
+  const COLORS = ['#F6BD60', '#004777', '#FF6663', '#136F63'];
   const savingValue = getCookie("necessitiesAmount");
   const necessitiesValue = getCookie("savingsAmount");
   const discretionaryValue = getCookie("discretionaryAmount");
