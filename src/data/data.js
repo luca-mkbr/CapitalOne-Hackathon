@@ -24,4 +24,9 @@ export const data = [
         name: "REI",
         type: "$100 On Camping Gear"
     },
+    {
+        img: "https://placewise.imgix.net/images/api/retailhubjs/6cc6e96298d1120b69173ac1ac5f5d0a",
+        name: "KOHL's",
+        type: "Coupons, Promo Codes, & Deals!"
+    }
 ]
