@@ -22,7 +22,7 @@ const Home = () => {
                         <CategoryBox label="Discretionary" amount={getCookie("discretionaryAmount")}>
 
                         </CategoryBox>
-                        <CategoryBox label="Loan Payments" amount={getCookie("loanAmount")}>
+                        <CategoryBox label="Loan Payments" amount={getCookie("loanPayments")}>
 
                         </CategoryBox>
                         <Link to="/budget"><div className="showmore">Show More</div></Link>
