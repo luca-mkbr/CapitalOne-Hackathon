@@ -21,9 +21,7 @@ const Piechart = () => {
     { name: 'Loan Payments', value: loanPaymentsNew }
   ];
   console.log("piechart values:" + savingValue, necessitiesValue, discretionaryValue, loanPaymentsValue, total, savingNew, necessitiesNew, discretionaryNew, loanPaymentsNew, data)
-  if (savingNew>0.2){ 
-    alert("You have got the right for rewards!")
-  }
+
   return (
     <div className="Piechart">
       <div className="piIndent"> <h1></h1></div>
