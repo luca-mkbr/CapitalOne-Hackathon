@@ -17,7 +17,7 @@ const Piechart = () => {
     { name: 'Mandatory', value: necessitiesNew },
     { name: 'Discretionary', value: discretionaryNew }
   ];
-  console.log(savingValue, necessitiesValue, discretionaryValue, total, savingNew, necessitiesNew, discretionaryNew, data)
+  console.log("piechart values:" + savingValue, necessitiesValue, discretionaryValue, total, savingNew, necessitiesNew, discretionaryNew, data)
   return (
     <div className="Piechart">
       <div className="piIndent"> <h1></h1></div>
