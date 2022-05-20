@@ -4,7 +4,7 @@ import { getCookie } from "./Cookies";
 
 
 const Piechart = () => {
-  const COLORS = ['#F6BD60', '#4DA1A9', '#FF6663'];
+  const COLORS = ['#F6BD60', '#4DA1A9', '#FF6663', '#0FFF50'];
   const savingValue = getCookie("necessitiesAmount");
   const necessitiesValue = getCookie("savingsAmount");
   const discretionaryValue = getCookie("discretionaryAmount");
@@ -12,8 +12,8 @@ const Piechart = () => {
   const total = parseInt(savingValue) + parseInt(necessitiesValue) + parseInt(discretionaryValue) + parseInt(loanPaymentsValue);
   const savingNew = Math.round(savingValue / total * 10000) / 100;
   const necessitiesNew = Math.round(necessitiesValue / total * 10000) / 100;
-  const discretionaryNew = Math.round(discretionaryValue / total * 10000) / 100
-  const loanPaymentsNew = Math.round(loanPaymentsValue / total * 10000) / 100
+  const discretionaryNew = Math.round(discretionaryValue / total * 10000) / 100;
+  const loanPaymentsNew = Math.round(loanPaymentsValue / total * 10000) / 100;
   const data = [
     { name: 'Savings', value: savingNew },
     { name: 'Mandatory', value: necessitiesNew },
