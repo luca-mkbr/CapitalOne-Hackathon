@@ -3,6 +3,7 @@ import './Budget.css'
 import Piechart from './Piechart'
 import AddBudget from './AddBudget'
 import Header from './Header';
+import GetPoints from './PickReward';
 
 const Budget = () => {
     return (
@@ -14,7 +15,6 @@ const Budget = () => {
                         <Piechart />
                     </div>
                     <div className='flex-child'>
-                        <div></div>
                         <AddBudget />
                     </div>
                 </div>
